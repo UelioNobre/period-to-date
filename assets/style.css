@@ -27,11 +27,23 @@
  * SOFTWARE.
  */
 
+ :root {
+  --primary-color: rgb(79, 77, 66);
+  --white-color: rgb(255, 255, 255);
+  --secondary-color: rgb(126, 124, 109);
+  --chocolate-color: rgb(59, 58, 53);
+ }
+
 *, html, body {
   margin: 0;
   padding: 0;
   line-height: 1.4;
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
 main {
@@ -63,7 +75,7 @@ h2 {
 }
 
 body {
-  background-color: rgb(240, 223, 111);
+  background-color: var(--chocolate-color);
 }
 
 section {
@@ -72,20 +84,20 @@ section {
   justify-content: start; 
   flex-direction: column;
   overflow: hidden;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 #day2period {
-  background-color: rgb(46, 52, 204);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   position: absolute;
   height: 20%;
   width: 100%;
 }
 
 #period2day {
-  background-color:rgb(13, 162, 56);
-  color: white;
+  background-color:var(--secondary-color);
+  color: var(--white-color);
   position: absolute;
   margin-top: 20vh;
     height: 80%;
@@ -116,6 +128,19 @@ input[type=number]
  width: 20vw;
  align-self: center;
  text-align: right;
- color: cornflowerblue;
+ color: var(--chocolate-color);
+}
+
+h1 {
+  padding: 0.5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 span {
+  font-size: 1rem;
+  display: block
 }
 
